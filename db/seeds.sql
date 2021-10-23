@@ -14,10 +14,10 @@ VALUES ("Salesperson",1),
         ("Lawyer",4);
 
 INSERT INTO employees (first_name,last_name,role_id)
-VALUES ("Mike Chan"),
-        ("Ashley Rodriguez"),
-        ("Kevin Tupic"),
-        ("Kumal Singh"),
-        ("Malia Brown"),
-        ("Sarah Lourde"),
-        ("Tom Allen");
+VALUES ("Mike","Chan",1),
+        ("Ashley","Rodriguez",2),
+        ("Kevin","Tupic",3),
+        ("Kumal","Singh",4),
+        ("Malia","Brown",5),
+        ("Sarah","Lourde",6),
+        ("Tom","Allen",7);
