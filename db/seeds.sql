@@ -1,23 +1,20 @@
-INSERT INTO departments (name)
-VALUES ("Sales"),
-        ("Engineering"),
-        ("Finance"),
-        ("Legal");
+USE company;
 
-INSERT INTO roles (title,department_id)
-VALUES ("Salesperson",1),
-        ("Lead Engineer",2),
-        ("Software Engineer",2),
-        ("Account Manager",3),
-        ("Accountant",3),
-        ("Legal team lead",4),
-        ("Lawyer",4);
+-- DROP TABLE IF EXISTS department;
+INSERT INTO department (name)
+VALUES ('Sales'),
+    ('Engineering'),
+    ('Finance');
 
-INSERT INTO employees (first_name,last_name,role_id)
-VALUES ("Mike","Chan",1),
-        ("Ashley","Rodriguez",2),
-        ("Kevin","Tupic",3),
-        ("Kumal","Singh",4),
-        ("Malia","Brown",5),
-        ("Sarah","Lourde",6),
-        ("Tom","Allen",7);
+-- DROP TABLE IF EXISTS role;
+INSERT INTO role (title, salary, department_id)
+VALUES
+    ('Sales Lead', '100000', 1),
+    ('Salesperson', '80000', 1),
+    ('Software Engineer', '120000', 2);
+
+INSERT INTO employee (first_name, last_name, role_id, manager_id)
+VALUES
+    ('John', 'Doe', 1, null),
+    ('Whitney', 'ChKropatan', 2, 1),
+    ('ANother', 'Person', 3, 1);
